@@ -1,7 +1,281 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+import { ChevronRight, Home, Download, FileText, Settings, HelpCircle } from "lucide-react"
+
+export default function AllegroTutorial() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="flex">
+        {/* Left Sidebar */}
+        <div className="w-80 bg-white shadow-sm border-r border-gray-200 min-h-screen">
+          <div className="p-6">
+            {/* Add ASRock Logo */}
+            <div className="flex justify-center mb-6 pb-4 border-b border-gray-100">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ASROCK-2rrjXm6EfQsmnXQC0s7XgVayHcLgjv.png"
+                alt="ASRock Logo"
+                className="h-8 w-auto"
+              />
+            </div>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-6">目錄</h2>
+
+            <nav className="space-y-1">
+              <div className="mb-4">
+                <h3 className="text-sm font-medium text-gray-600 mb-2">Allegro PCB 設計</h3>
+                <ul className="space-y-1 ml-4">
+                  <li>
+                    <a href="#" className="flex items-center text-sm text-orange-600 bg-orange-50 px-3 py-2 rounded-md">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                      Allegro/OrCad 下載安裝教學
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      基本介面操作指南
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      電路圖繪製基礎
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      PCB 佈局設計流程
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-sm font-medium text-gray-600 mb-2">進階功能</h3>
+                <ul className="space-y-1 ml-4">
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      高速信號設計
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      差分對設計技巧
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      電源平面設計
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="text-sm font-medium text-gray-600 mb-2">疑難排解</h3>
+                <ul className="space-y-1 ml-4">
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      常見安裝問題解決
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      授權管理問題
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex items-center text-sm text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md hover:bg-gray-50"
+                    >
+                      效能優化設定
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-1 p-8">
+          {/* Breadcrumb */}
+          <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-8">
+            <Home className="w-4 h-4" />
+            <ChevronRight className="w-4 h-4" />
+            <span>PCB 設計教學</span>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-gray-900">Allegro/OrCad 下載安裝</span>
+          </nav>
+
+          {/* Article Header */}
+          <div className="mb-8">
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">Allegro/OrCad 完整下載安裝教學指南</h1>
+            <p className="text-gray-600">2024年12月25日</p>
+          </div>
+
+          {/* Article Content */}
+          <div className="prose prose-lg max-w-none">
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Cadence Allegro 和 OrCad 是業界領先的 PCB 設計軟體套件，廣泛應用於電子產品開發。
+              本教學將詳細介紹如何下載、安裝及初始設定這套強大的設計工具，讓您能夠順利開始 PCB 設計之旅。
+            </p>
+
+            <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <HelpCircle className="w-5 h-5 text-blue-400 mt-0.5" />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-sm font-medium text-blue-800">重要提醒</h3>
+                  <p className="mt-1 text-sm text-blue-700">
+                    請確保您擁有合法的軟體授權，並從官方網站下載軟體以確保安全性。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">步驟一：系統需求檢查</h2>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+              <h3 className="text-lg font-medium text-gray-900 mb-4">最低系統需求</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  作業系統：Windows 10/11 (64-bit) 或 Linux RHEL/CentOS 7+
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  記憶體：最少 8GB RAM（建議 16GB 以上）
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  硬碟空間：至少 10GB 可用空間
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  顯示卡：支援 OpenGL 3.0 以上
+                </li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">步驟二：下載軟體</h2>
+
+            <div className="space-y-4 mb-6">
+              <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                  1
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-900">前往 Cadence 官方網站</h4>
+                  <p className="text-gray-600 mt-1">
+                    訪問{" "}
+                    <a href="#" className="text-blue-600 hover:underline">
+                      www.cadence.com
+                    </a>{" "}
+                    並登入您的帳戶
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                  2
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-900">選擇產品版本</h4>
+                  <p className="text-gray-600 mt-1">在產品頁面選擇 "Allegro PCB Designer" 或 "OrCad PCB Designer"</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                  3
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-900">下載安裝檔案</h4>
+                  <p className="text-gray-600 mt-1">選擇適合您作業系統的版本並開始下載（檔案大小約 3-5GB）</p>
+                </div>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">步驟三：安裝程序</h2>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <Settings className="w-5 h-5 text-yellow-600 mt-0.5" />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-sm font-medium text-yellow-800">安裝前準備</h3>
+                  <p className="mt-1 text-sm text-yellow-700">
+                    請以系統管理員身分執行安裝程式，並暫時關閉防毒軟體以避免安裝過程中的干擾。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6 mb-8">
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-lg font-medium text-gray-900 mb-4 flex items-center">
+                  <Download className="w-5 h-5 mr-2 text-blue-500" />
+                  執行安裝程式
+                </h3>
+                <ol className="space-y-3 text-gray-700">
+                  <li>1. 雙擊下載的安裝檔案開始安裝</li>
+                  <li>2. 選擇安裝語言（建議選擇英文以獲得最佳相容性）</li>
+                  <li>3. 閱讀並接受軟體授權協議</li>
+                  <li>4. 選擇安裝路徑（建議使用預設路徑）</li>
+                  <li>5. 選擇要安裝的元件（初學者建議選擇完整安裝）</li>
+                  <li>6. 等待安裝完成（約需 30-60 分鐘）</li>
+                </ol>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">步驟四：授權設定</h2>
+
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <FileText className="w-5 h-5 text-red-600 mt-0.5" />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-sm font-medium text-red-800">授權管理</h3>
+                  <p className="mt-1 text-sm text-red-700">
+                    軟體需要有效的授權才能正常運作。請聯繫您的授權管理員或 Cadence 代理商取得授權檔案。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-gray-700 leading-relaxed">
+              完成以上步驟後，您就可以開始使用 Allegro/OrCad 進行 PCB 設計了。
+              建議先熟悉軟體介面，並參考我們的其他教學文章來學習基本操作。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
